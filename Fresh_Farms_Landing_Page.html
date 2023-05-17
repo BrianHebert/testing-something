@@ -1,0 +1,135 @@
+<!Doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Fresh Farms Landing Page</title>
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+		body{
+			background-image: url("FreshFarmsBG.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center; 
+			background-attachment: fixed; 
+			padding:0px;
+			margin:0px;
+		}
+		#clouds{
+			overflow: hidden;
+			position: relative;
+		}
+		#cloud1{
+			width: 8%;
+			animation: cloudOne 12s infinite;
+			animation-timing-function: linear;
+			margin-top: 50px;
+			position: absolute;
+			
+		}
+		#cloud2{
+			position: absolute;
+			width: 6%;
+			animation: cloudTwo 8s infinite;
+			animation-timing-function: linear;
+			animation-delay: 2s;
+			animation-fill-mode: both;
+			
+		}
+		#cloud3{
+			width: 10%;
+			animation: cloudOne 16s infinite;
+			animation-timing-function: linear;
+			animation-delay: 4s;
+			animation-fill-mode: both;
+			margin-top: 100px;
+	
+		}
+		@keyframes cloudOne{
+			from {transform: translateX(-100%)}
+			to {transform: translateX(1230%)}
+		}
+		@keyframes cloudTwo{
+			from {transform: translateX(-100%)}
+			to {transform: translateX(1660%)}
+		}
+		h1{
+			color: #365211;
+			text-align: center;
+			margin-top: 50px;
+			margin-bottom: 0px;
+			font-size: 5vw;
+			font-style: italic;
+			font-family: 'Oswald', sans-serif;
+			animation: dropTitle 2s 1 forwards;
+		}
+		@keyframes dropTitle{
+			from {transform: translateY(-500px)}
+			to {transform: translateY(0px)}
+		}
+		h2{
+		 margin-top: 0px;
+		 color: #6e9631;
+		 text-align: center;
+		 font-size: 3vw;
+		 font-style: italic;
+		 font-family: 'Oswald', sans-serif;
+		 animation: zoom 2s 1;
+		 animation-delay: 2s;
+		 animation-fill-mode: both;
+		 
+		}
+		@keyframes zoom{
+			0% {opacity: 0; transform: scale3d(.3, .3, .3);}
+			50% {opacity: 1}
+		}
+		nav{
+			text-align: center;
+			animation: zoom 2s 1;
+			animation-delay: 2s;
+			animation-fill-mode: both;
+		}
+		li{
+			display:inline-block;
+			padding: 0px;
+			margin-left: -4px;
+		}
+		ol{
+			display:inline-block;
+			list-style-type: none;
+		}
+		li a{
+		color: black;
+		text-decoration: none;
+		padding: 1vw;
+		background-color: rgba(110, 150,49,.5);
+		border: #6e9631 solid 2px;
+		font-family: 'Oswald', sans-serif;
+		font-size: 1.8vw;
+		}
+		li:first-of-type > a{
+			border-right: none;
+		}
+		li:last-of-type > a{
+			border-left: none;
+		}
+		li a:hover{
+		background-color: rgba(110, 150,49,1);
+		}
+	</style>
+</head>
+<body>
+	<div id="clouds">
+		<img id="cloud2" src="stylized_basic_cloud.png">
+		<img id="cloud1" src="stylized_basic_cloud.png">
+		<img id="cloud3" src="stylized_basic_cloud.png">
+	</div>
+	<header><h1>Organic Fresh Farms</h1><h2>From our fields to your table</h2></header>
+	<nav>
+		<ol>
+			<li><a href="#">Cow Manure Fertilizer</a></li>
+			<li><a href="#">Chicken Eggs</a></li>
+			<li><a href="#">Cottage Cheese</a></li>
+		</ol>
+	</nav>
+</body>
+</html>
